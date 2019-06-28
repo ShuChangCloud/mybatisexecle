@@ -1,5 +1,6 @@
 package com.xmcc.mapper;
 
+import com.xmcc.UsersWithRoleDto;
 import com.xmcc.entity.Users;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
@@ -39,5 +40,7 @@ public interface UsersMapper {
      * @return
      */
     int updateDynamic(@Param("map") Map<String,Object> map);
+
+
 
 }

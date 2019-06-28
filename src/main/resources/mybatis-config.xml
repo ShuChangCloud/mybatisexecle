@@ -4,6 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <settings>
+        <!--<setting name="aggressiveLazyLoading" value="false"/>-->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <setting name="aggressiveLazyLoading" value="false"/>
+    </settings>
+
     <environments default="development">
         <environment id="development">
             <transactionManager type="JDBC"/>
@@ -21,5 +27,6 @@
     </databaseIdProvider>
     <mappers>
         <package name="com.xmcc.mapper"></package>
+        <package name="com.xmcc.model"></package>
     </mappers>
 </configuration>
